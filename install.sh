@@ -9,7 +9,7 @@ apt update & apt install nano mc wget -y
 wget http://dl.acestream.org/linux/acestream_3.1.16_ubuntu_16.04_x86_64.tar.gz && tar zxvf acestream_3.1.16_ubuntu_16.04_x86_64.tar.gz && rm acestream_3.1.16_ubuntu_16.04_x86_64.tar.gz
 
 #Перенесем все в /opt/
-mv acestream_3.1.16_ubuntu_16.04_x86_64/ ~/opt/acestream
+mv acestream_3.1.16_ubuntu_16.04_x86_64/ /opt/acestream
 
 #Установим зависимости
 apt-get install python python-setuptools python-m2crypto python-apsw python-pip -y
