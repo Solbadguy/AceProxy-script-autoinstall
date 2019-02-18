@@ -19,10 +19,10 @@ pip install greenlet gevent psutil
 apt-get install python-gevent git python-psutil python-pkg-resources -y
 
 #Скопируем свежую версию AceProxy от Pepsik-Kiev.
-cd ~/opt && git clone https://github.com/pepsik-kiev/HTTPAceProxy.git
+cd /opt && git clone https://github.com/pepsik-kiev/HTTPAceProxy.git
 
 # Меняем значения конф
-cd ~/opt/HTTPAceProxy
+cd /opt/HTTPAceProxy
 
 # Включаем автозапуск движка
 sed -i 's/.*acespawn = False.*/acespawn = True/' aceconfig.py
@@ -31,4 +31,4 @@ sed -i 's/.*acespawn = False.*/acespawn = True/' aceconfig.py
 sed -i "s/acecmd = 'acestreamengine --client-console --live-buffer 25 --vod-buffer 10 --vod-drop-max-age 120'/acecmd = '\/opt\/acestream\/acestreamengineacestreamengine --client-console --live-buffer 25 --vod-buffer 10 --vod-drop-max-age 120'/" aceconfig.py
 
 #Запустим прокси
-python ~/opt/HTTPAceProxy/acehttp.py
+python /opt/HTTPAceProxy/acehttp.py
