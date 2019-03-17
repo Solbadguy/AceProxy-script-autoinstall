@@ -31,7 +31,7 @@ sed -i.bak '5d' aceconfig.py
 sed -i 's/acespawn = False/acespawn = True/' aceconfig.py
 
 #Меняем путь к исполняемому файлу 
-sed -i "s/acecmd = 'acestreamengine --client-console --live-buffer 25 --vod-buffer 10 --vod-drop-max-age 120'/acecmd = '\/opt\/acestream\/acestreamengineacestreamengine --client-console --live-buffer 25 --vod-buffer 10 --vod-drop-max-age 120'/" aceconfig.py
+sed -i "s/acecmd = 'acestreamengine --client-console --live-buffer 25 --vod-buffer 10 --vod-drop-max-age 120'/acecmd = '\/opt\/acestream\/acestreamengine --client-console --live-buffer 25 --vod-buffer 10 --vod-drop-max-age 120'/" aceconfig.py
 
 #Запустим прокси
 python /opt/HTTPAceProxy/acehttp.py
